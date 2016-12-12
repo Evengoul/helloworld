@@ -12,6 +12,15 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
+        <NamedIndividual IRI="#ZhanSan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Banana"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Apple"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Food"/>
     </Declaration>
     <Declaration>
@@ -24,7 +33,16 @@
         <Class IRI="#people"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#XiaoMing"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Grain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rice"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#eatFood"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Fruit"/>
@@ -45,6 +63,39 @@
         <Class IRI="#Grain"/>
         <Class IRI="#Food"/>
     </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Fruit"/>
+        <NamedIndividual IRI="#Apple"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fruit"/>
+        <NamedIndividual IRI="#Banana"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Grain"/>
+        <NamedIndividual IRI="#Rice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Children"/>
+        <NamedIndividual IRI="#XiaoMing"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Adult"/>
+        <NamedIndividual IRI="#ZhanSan"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#eatFood"/>
+        <NamedIndividual IRI="#XiaoMing"/>
+        <NamedIndividual IRI="#Apple"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#eatFood"/>
+        <Class IRI="#people"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#eatFood"/>
+        <Class IRI="#Food"/>
+    </ObjectPropertyRange>
 </Ontology>
 
 
