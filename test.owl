@@ -6,6 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.semanticweb.org/even/ontologies/2016/11/untitled-ontology-69">
+    <Prefix name="" IRI="http://www.semanticweb.org/even/ontologies/2016/11/untitled-ontology-69"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -15,7 +16,28 @@
         <NamedIndividual IRI="#ZhanSan"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Adult"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#YaoYao"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#XiaoMing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DaXiong"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rice"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPat"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Banana"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WangWu"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Apple"/>
@@ -24,22 +46,13 @@
         <Class IRI="#Food"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Adult"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Children"/>
     </Declaration>
     <Declaration>
         <Class IRI="#people"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#XiaoMing"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Grain"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Rice"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#eatFood"/>
@@ -72,12 +85,24 @@
         <NamedIndividual IRI="#Banana"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Children"/>
+        <NamedIndividual IRI="#DaXiong"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Grain"/>
         <NamedIndividual IRI="#Rice"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Adult"/>
+        <NamedIndividual IRI="#WangWu"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Children"/>
         <NamedIndividual IRI="#XiaoMing"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Children"/>
+        <NamedIndividual IRI="#YaoYao"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Adult"/>
@@ -88,6 +113,31 @@
         <NamedIndividual IRI="#XiaoMing"/>
         <NamedIndividual IRI="#Apple"/>
     </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#eatFood"/>
+        <NamedIndividual IRI="#ZhanSan"/>
+        <NamedIndividual IRI="#Rice"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPat"/>
+        <NamedIndividual IRI="#WangWu"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPat"/>
+        <NamedIndividual IRI="#XiaoMing"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPat"/>
+        <NamedIndividual IRI="#YaoYao"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPat"/>
+        <NamedIndividual IRI="#ZhanSan"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#eatFood"/>
         <Class IRI="#people"/>
